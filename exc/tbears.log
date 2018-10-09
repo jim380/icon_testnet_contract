@@ -1,0 +1,11 @@
+[ERROR|logger.py:360] 2018-10-09 05:18:22,657 > [IconService] cx576840487b7f2e71dca1e95656b49dbc00c1d19f is inactive SCORE (32600)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_inner_service.py", line 227, in _validate_transaction
+    self._icon_service_engine.validate_transaction(converted_request)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/icon_service_engine.py", line 523, in validate_transaction
+    self._icon_pre_validator.execute(params, step_price, minimum_step)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_pre_validator.py", line 69, in execute
+    self._validate_transaction_v3(params, step_price, minimum_step)
+  File "/usr/local/lib/python3.6/dist-packages/iconservice/iconscore/icon_pre_validator.py", line 153, in _validate_transaction_v3
+    raise InvalidRequestException(f'{to} is inactive SCORE')
+iconservice.base.exception.InvalidRequestException: cx576840487b7f2e71dca1e95656b49dbc00c1d19f is inactive SCORE (32600)
